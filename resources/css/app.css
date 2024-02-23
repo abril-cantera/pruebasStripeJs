@@ -1,6 +1,10 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* app.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Aquí puedes añadir tus propios estilos y utilizar la función @apply para aplicar clases de Tailwind */
 
 [x-cloak] {
     display: none;

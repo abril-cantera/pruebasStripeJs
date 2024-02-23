@@ -26,3 +26,12 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+Route::get('/comprar-productos', function () {
+    return view('products.comprar_productos');
+})->name('comprar_productos');
+
+Route::get('/pago/mostrar-formulario', function () {
+    return view('pago.formulario_pago');
+})->name('pago.mostrar_formulario');
+
+Route::get('/pago/exito', 'PagoController@exito')->name('pago.exito');
